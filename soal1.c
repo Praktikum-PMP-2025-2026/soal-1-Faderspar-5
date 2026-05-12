@@ -74,15 +74,15 @@ int main() {
     }
     struct Node* root = createTree(t, n, 0) ;
 
-    printf ("PRE ") ;
+    printf ("PRE") ;
     preorderTraversal(root) ;
     printf("\n") ;
         
-    printf("IN ") ;
+    printf("IN") ;
     inorderTraversal(root) ; 
     printf("\n");
 
-    printf("POST ") ;
+    printf("POST") ;
     postorderTraversal(root) ;
     printf("\n") ;
         
