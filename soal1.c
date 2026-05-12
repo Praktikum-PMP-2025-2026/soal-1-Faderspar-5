@@ -71,21 +71,21 @@ int main() {
     int *t = (int*)malloc(n*sizeof(int)) ;
     for (i =0 ; i < n; i++ ) {
         scanf("%d", &t[i]) ;
-        struct Node* root = createTree(t, n, 0) ;
-
-        printf ("PRE ") ;
-        preorderTraversal(root) ;
-        printf("\n") ;
-        
-        printf("IN ") ;
-        inorderTraversal(root) ; 
-        printf("\n");
-
-        printf("POST ") ;
-        postorderTraversal(root) ;
-        printf("\n") ;
-        
-        free(t) ;
-        return 0;
     }
+    struct Node* root = createTree(t, n, 0) ;
+
+    printf ("PRE ") ;
+    preorderTraversal(root) ;
+    printf("\n") ;
+        
+    printf("IN ") ;
+    inorderTraversal(root) ; 
+    printf("\n");
+
+    printf("POST ") ;
+    postorderTraversal(root) ;
+    printf("\n") ;
+        
+    free(t) ;
+    return 0;
 }
